@@ -55,9 +55,24 @@
 
 .button {
     height: 30px;
-    color: red;
-    font-weight: bold;
+    color: teal;
+    font-size: 18px;
+    font-weight: 700;
     cursor: pointer;
+    margin-top: 20px;
+}
+.payButton {
+    background-color: lightyellow;
+    color: darkgreen;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    width: 25vh;
+    cursor: pointer;
+    font-family:'Courier New', Courier, monospace;
+   
+    margin: auto;
+
     margin-top: 20px;
 }
 
@@ -108,5 +123,7 @@
     .wrapper {
         width: 100%;
     }
+   
+
 
 }

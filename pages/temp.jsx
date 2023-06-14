@@ -1,7 +1,7 @@
 import styles from "../styles/Cart.module.css";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -85,7 +85,7 @@ const Cart = () => {
                 </table>
             </div>
 
-
+                                            
 
             <div className={styles.right}>
                 <div className={styles.wrapper}>
