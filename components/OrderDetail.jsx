@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styles from "../styles/OrderDetail.module.css";
-import Link from "next/link";
 
 const OrderDetail = ({ total, createOrder }) => {
     const [customer, setCustomer] = useState("");
@@ -13,7 +12,7 @@ const OrderDetail = ({ total, createOrder }) => {
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
-                <h1 className={styles.title}>You will pay $12 after delivery.</h1>
+                <h1 className={styles.title}>Almost done.A few clicks away</h1>
                 <div className={styles.item}>
                     <label className={styles.label}>Name Surname</label>
                     <input
@@ -27,7 +26,7 @@ const OrderDetail = ({ total, createOrder }) => {
                     <label className={styles.label}>Phone Number</label>
                     <input
                         type="text"
-                        placeholder="+1 234 567 89"
+                        placeholder="+370 00000 000"
                         className={styles.input}
                     />
                 </div>
@@ -35,7 +34,7 @@ const OrderDetail = ({ total, createOrder }) => {
                     <label className={styles.label}>Address</label>
                     <textarea
                         rows={5}
-                        placeholder="Elton St. 505 NY"
+                        placeholder="Pamėnkalnio g. 11, Vilnius"
                         type="text"
                         className={styles.textarea}
                         onChange={(e) => setAddress(e.target.value)}

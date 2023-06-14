@@ -19,12 +19,12 @@
 .item:nth-child(2) {
     flex: 3;
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
 }
 
-.item:last-child {
+/* .item:last-child {
     justify-content: flex-end;
-}
+} */
 
 .callButton {
     background-color: white;
@@ -39,10 +39,6 @@
     color: white;
 }
 
-/* .text:first-child {
-    font-size: 12px;
-    font-weight: 500;
-} */
 
 .text:last-child {
     font-size: 18px;
@@ -54,17 +50,28 @@
     display: flex;
     align-items: center;
     list-style: none;
-    color: white;
+    color: #ffffff;
 }
 
 .listItem {
     margin: 20px;
     font-weight: 500;
+    cursor: pointer;
 }
 
-.cart {
+.cart,
+.loginIco {
     position: relative;
+    cursor: pointer;
 }
+.cart:hover,
+.loginIco:hover,
+.listItem:first-child:hover {
+    box-shadow: -1px -1px 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
 
 .counter {
     position: absolute;
